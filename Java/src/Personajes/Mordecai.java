@@ -6,7 +6,6 @@ public class Mordecai extends Personaje{
         super("Mordecai", 7, 7);
 
     }
-
     @Override
     public int ataque() {
         return 13;
