@@ -3,6 +3,7 @@ package Personajes;
 public class Meowl extends Personaje {
     public Meowl(String nombre, int vida, int vidaMax) {
         super(nombre, vida, vidaMax);
+        startMeowl();
     }
 
     @Override

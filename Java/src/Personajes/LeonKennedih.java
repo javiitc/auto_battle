@@ -3,6 +3,7 @@ package Personajes;
 public class LeonKennedih extends Personaje {
     public LeonKennedih(String nombre, int vida, int vidaMax) {
         super(nombre, vida, vidaMax);
+        startLeon();
     }
 
     @Override

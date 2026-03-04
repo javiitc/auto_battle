@@ -3,6 +3,7 @@ package Personajes;
 public class fih extends Personaje {
     public fih (String nombre, int vida, int vidaMax) {
         super(nombre, vida, vidaMax);
+        startFih();
     }
 
     @Override
