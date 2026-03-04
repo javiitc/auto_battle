@@ -14,6 +14,6 @@ public class Mordecai extends Personaje{
 
     @Override
     public void defensa() {
-        System.out.println("Migajero");
+        System.out.println("Pega un salto y esquiva los ataques");
     }
 }

@@ -12,6 +12,6 @@ public class Papaleta extends Personaje {
 
     @Override
     public void defensa() {
-        System.out.println("Dios de Regular Show");
+        System.out.println("Se cubre con los brazos");
     }
 }

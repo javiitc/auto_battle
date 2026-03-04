@@ -13,6 +13,6 @@ public abstract class Rigby extends Personaje{
 
     @Override
     public void defensa() {
-        System.out.println("Inspiró a disney");
+        System.out.println("Se hace bolita");
     }
 }
