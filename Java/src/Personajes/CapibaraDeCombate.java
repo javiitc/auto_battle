@@ -4,6 +4,7 @@ public class CapibaraDeCombate extends Personaje{
 
     public CapibaraDeCombate(String nombre, int vida, int vidaMax) {
         super(nombre, vida, vidaMax);
+        iniciarCapibara();
     }
 
     @Override

@@ -4,6 +4,7 @@ public class KokaLoka extends Personaje{
 
     public KokaLoka(String nombre, int vida, int vidaMax) {
         super(nombre, vida, vidaMax);
+        inicarKokaLoka();
     }
 
     @Override

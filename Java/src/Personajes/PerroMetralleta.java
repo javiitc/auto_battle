@@ -4,6 +4,7 @@ public class PerroMetralleta extends Personaje {
 
     public PerroMetralleta(String nombre, int vida, int vidaMax) {
         super(nombre, vida, vidaMax);
+        iniciarPerroMetralleta();
     }
 
     @Override
