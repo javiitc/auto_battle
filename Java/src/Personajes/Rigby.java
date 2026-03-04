@@ -2,7 +2,7 @@ package Personajes;
 
 public abstract class Rigby extends Personaje{
 
-    public Rigby(String nombre, int vida, int vidaMax) {
+    public Rigby() {
         super("Rigby", 3, 3);
     }
 

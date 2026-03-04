@@ -1,7 +1,8 @@
 package Personajes;
 
 public class Papaleta extends Personaje {
-    public Papaleta(String nombre, int vida, int vidaMax) {
+    public Papaleta() {
+
         super("Papaleta", 14, 14);
     }
 
