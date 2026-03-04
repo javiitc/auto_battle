@@ -1,32 +1,14 @@
 package Personajes;
 
-public class Personaje {
+public abstract class Personaje {
     private String nombre;
-    private int ataque;
-    private int defensa;
     private int vida;
     private int vidaMax;
 
-    public Personaje(int ataque, int defensa, String nombre, int vida, int vidaMax) {
-        this.ataque = ataque;
-        this.defensa = defensa;
+    public Personaje(String nombre, int vida, int vidaMax) {
         this.nombre = nombre;
         this.vida = vida;
         this.vidaMax = vidaMax;
-    }
-
-    public int getAtaque() {
-        return ataque;
-    }
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
-    }
-
-    public int getDefensa() {
-        return defensa;
-    }
-    public void setDefensa(int defensa) {
-        this.defensa = defensa;
     }
 
     public String getNombre() {
@@ -49,4 +31,7 @@ public class Personaje {
     public void setVidaMax(int vidaMax) {
         this.vidaMax = vidaMax;
     }
+
+    public abstract int ataque ();
+    public abstract void defensa();
 }
