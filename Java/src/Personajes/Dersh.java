@@ -8,6 +8,7 @@ public class Dersh extends Personaje {
 
     @Override
     public int ataque() {
+        System.out.println("Dersh ataca con un Dershiyate");
         return 1;
     }
 

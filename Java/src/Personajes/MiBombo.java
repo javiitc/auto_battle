@@ -8,6 +8,7 @@ public class MiBombo extends Personaje {
 
     @Override
     public int ataque() {
+        System.out.println("Mi Bombo ataca con un Bombo-ataque");
         return 1;
     }
 

@@ -8,6 +8,7 @@ public class Mambo extends Personaje {
 
     @Override
     public int ataque() {
+        System.out.println("Mambo le tira un mambo a su oponente");
         return 29;
     }
 
