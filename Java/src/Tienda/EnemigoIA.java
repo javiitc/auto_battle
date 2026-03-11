@@ -38,9 +38,7 @@ public class EnemigoIA {
 
     }
 
-    /**
-     * Elige 5 aleatorios de su inventario para la pelea.
-     */
+    //Elige los personajes que tenemos en inventario (Si tenemos 10 escogera 5) al comenzar con 3 no hay problema.
     public void seleccionarEquipoCombate() {
         equipoCombate.clear();
         ArrayList<Personaje> copia = new ArrayList<>(this.inventario);
@@ -49,7 +47,7 @@ public class EnemigoIA {
 
         for (int i = 0; i < aElegir; i++) {
             int indice = random.nextInt(copia.size());
-            equipoCombate.add(copia.remove(indice)); // Selección manual sin repetición
+            equipoCombate.add(copia.remove(indice)); // Selección manual
         }
         System.out.println("IA: Alineación lista con " + equipoCombate.size() + " personajes.");
     }
