@@ -1,8 +1,7 @@
 package Personajes;
 public class Patricio extends Personaje {
-    public Patricio(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        inicializarPatricio();
+    public Patricio() {
+        super("Patricio", 15, 15);
     }
 
     @Override
@@ -14,9 +13,5 @@ public class Patricio extends Personaje {
     @Override
     public void defensa() {
         System.out.println("Patricio se esta defendiendo");
-    }
-
-    public void inicializarPatricio() {
-        Patricio patricio = new Patricio("Patricio", 15, 15);
     }
 }

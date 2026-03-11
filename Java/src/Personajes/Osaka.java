@@ -1,8 +1,8 @@
 package Personajes;
 
-public abstract class Osaka extends Personaje {
+public class Osaka extends Personaje {
 
-    public Osaka (String nombre, int vida, int vidaMax) {
+    public Osaka () {
         super("Osaka",8, 8);
     }
 

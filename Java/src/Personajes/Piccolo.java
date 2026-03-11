@@ -1,8 +1,8 @@
 package Personajes;
 
-public abstract class Piccolo extends Personaje{
+public class Piccolo extends Personaje{
 
-    public Piccolo(String nombre, int vida, int vidaMax) {
+    public Piccolo() {
         super("Piccolo", 20, 20);
     }
 

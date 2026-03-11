@@ -1,8 +1,8 @@
 package Personajes;
 
-public abstract class Unemployed extends Personaje{
+public class Unemployed extends Personaje{
 
-    public Unemployed(String nombre, int vida, int vidaMax) {
+    public Unemployed() {
         super("Unemployed", 15, 15);
     }
 
@@ -11,7 +11,7 @@ public abstract class Unemployed extends Personaje{
         return 10;
     }
     @Override
-public void defensa(){
+    public void defensa(){
         System.out.println("No cotiza el ataque");
     }
 

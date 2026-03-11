@@ -2,9 +2,8 @@ package Personajes;
 
 public class PerroMetralleta extends Personaje {
 
-    public PerroMetralleta(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        iniciarPerroMetralleta();
+    public PerroMetralleta() {
+        super("PerroMetralleta", 8, 8);
     }
 
     @Override
@@ -14,10 +13,7 @@ public class PerroMetralleta extends Personaje {
 
     @Override
     public void defensa() {
-        System.out.println();
+        System.out.println("Ha usado su AK-47 para protegerse");
     }
 
-    public void iniciarPerroMetralleta() {
-        PerroMetralleta perroMetralleta  = new PerroMetralleta("PerroMetralleta", 8, 8);
-    }
 }

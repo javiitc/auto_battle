@@ -1,9 +1,8 @@
 package Personajes;
 
 public class furryDeku extends Personaje {
-    public furryDeku(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        iniciarFurryDeku();
+    public furryDeku() {
+        super("Furry Deku", 22, 22);
     }
 
     @Override
@@ -15,9 +14,5 @@ public class furryDeku extends Personaje {
     @Override
     public void defensa() {
         System.out.println("Furry Deku se defiende con su poder de transformación en un animal feroz, aumentando su resistencia y reduciendo el daño recibido.");
-    }
-
-    public void iniciarFurryDeku() {
-        furryDeku furryDeku = new furryDeku("Furry Deku", 22, 22);
     }
 }

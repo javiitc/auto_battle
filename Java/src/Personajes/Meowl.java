@@ -1,9 +1,8 @@
 package Personajes;
 
 public class Meowl extends Personaje {
-    public Meowl(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        startMeowl();
+    public Meowl() {
+        super("Meowl", 10, 10);
     }
 
     @Override
@@ -15,10 +14,6 @@ public class Meowl extends Personaje {
     @Override
     public void defensa() {
         System.out.println(getNombre() + " gets clipped....");
-    }
-
-    public void startMeowl() {
-        Meowl meowl = new Meowl("Meowl", 10, 10);
     }
 
 }
