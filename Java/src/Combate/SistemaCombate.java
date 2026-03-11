@@ -37,6 +37,11 @@ public class SistemaCombate {
             defensor = temporal;
 
             System.out.println();
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
         }
 
         Jugador ganador;
