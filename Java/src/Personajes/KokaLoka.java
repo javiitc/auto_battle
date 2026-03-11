@@ -2,10 +2,9 @@ package Personajes;
 
 public class KokaLoka extends Personaje{
 
-    public KokaLoka(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        inicarKokaLoka();
-    }
+    public KokaLoka() {
+        super("Koka Loka", 15, 15);
+   }
 
     @Override
     public int ataque() {
@@ -15,10 +14,6 @@ public class KokaLoka extends Personaje{
     @Override
     public void defensa() {
         System.out.println();
-    }
-
-    public void inicarKokaLoka () {
-        KokaLoka kokaLoka = new KokaLoka("Koka Loka", 15, 15);
     }
 
 

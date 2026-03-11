@@ -1,9 +1,8 @@
 package Personajes;
 
 public class fih extends Personaje {
-    public fih (String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        startFih();
+    public fih () {
+        super("fih", 4, 4);
     }
 
     @Override
@@ -15,10 +14,6 @@ public class fih extends Personaje {
     @Override
     public void defensa() {
         System.out.println(getNombre() + " dries up!");
-    }
-
-    public void startFih() {
-        fih fih = new fih("fih", 4, 4);
     }
 
 }

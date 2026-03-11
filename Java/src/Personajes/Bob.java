@@ -1,8 +1,7 @@
 package Personajes;
 public class Bob extends Personaje {
-    public Bob(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        inicializarBob();
+    public Bob() {
+        super("Bob", 17, 17);
     }
 
     @Override
@@ -16,7 +15,4 @@ public class Bob extends Personaje {
         System.out.println("Bob se esta defendiendo");
     }
 
-    public void inicializarBob() {
-        Bob bob = new Bob("Bob", 17, 17);
-    }
 }

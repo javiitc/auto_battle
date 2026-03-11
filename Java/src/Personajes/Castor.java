@@ -1,8 +1,7 @@
 package Personajes;
 public class Castor extends Personaje {
-    public Castor(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        inicializarCastor();
+    public Castor() {
+        super("Castor", 5, 5);
     }
 
     @Override
@@ -14,9 +13,5 @@ public class Castor extends Personaje {
     @Override
     public void defensa() {
         System.out.println("El castor se esta defendiendo");
-    }
-
-    public void inicializarCastor() {
-        Castor castor = new Castor("Castor", 5, 5);
     }
 }

@@ -1,9 +1,8 @@
 package Personajes;
 
 public class MiBombo extends Personaje {
-    public MiBombo(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        iniciarPersonaje();
+    public MiBombo() {
+        super("Mi Bombo", 9, 9);
     }
 
     @Override
@@ -15,10 +14,6 @@ public class MiBombo extends Personaje {
     @Override
     public void defensa() {
         System.out.println("Mi Bombo se defiende con su escudo de bombo");
-    }
-
-    public void iniciarPersonaje() {
-        MiBombo mibombo = new MiBombo("Mi Bombo", 9, 9);
     }
 
 }
