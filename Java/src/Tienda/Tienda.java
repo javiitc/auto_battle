@@ -90,7 +90,7 @@ public class Tienda {
         slotsPersonajes.set(indiceSlot, null);
         equipoJugadorDemo.add(personajeAComprar);
 
-        System.out.println("¡Has reclutado a " + personajeAComprar.getNombre() + " (Gratis)!");
+        System.out.println("¡Has reclutado a " + personajeAComprar.getNombre());
     }
 
     public void venderPersonaje(int indiceEquipo) {
