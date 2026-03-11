@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Tienda {
 
-    private static final int NUMERO_SLOTS = 3;
+    private static final int numeroSlots = 3;
 
     private List<Personaje> slotsPersonajes;
     private Random random;
@@ -26,7 +26,7 @@ public class Tienda {
         System.out.println("\n================ Rolleando personajes ================");
         slotsPersonajes.clear();
 
-        for (int i = 0; i < NUMERO_SLOTS; i++) {
+        for (int i = 0; i < numeroSlots; i++) {
             int seleccion = random.nextInt(14);
 
             Personaje nuevoPersonaje;
@@ -90,7 +90,35 @@ public class Tienda {
         slotsPersonajes.set(indiceSlot, null);
         equipoJugadorDemo.add(personajeAComprar);
 
-        System.out.println("Has reclutado a " + personajeAComprar.getNombre());
+        System.out.println("¡Has reclutado a " + personajeAComprar.getNombre() + " (Gratis)!");
     }
 
+    public void venderPersonajeDelEquipo(int indiceEquipo) {
+        if (indiceEquipo < 0 || indiceEquipo >= equipoJugadorDemo.size()) {
+            System.out.println("Índice de equipo inválido.");
+            return;
+        }
+
+        Personaje personajeAVender = equipoJugadorDemo.get(indiceEquipo);
+        System.out.println("\nHas despedido/vendido a " + personajeAVender.getNombre() + ".");
+
+        equipoJugadorDemo.remove(indiceEquipo);
+    }
+
+    public static void main(String[] args) {
+        Tienda miTiendaSAP = new Tienda();
+
+        miTiendaSAP.mostrarTienda();
+
+        miTiendaSAP.comprarPersonaje(0);
+        miTiendaSAP.comprarPersonaje(1);
+
+        miTiendaSAP.mostrarTienda();
+
+        miTiendaSAP.hacerRoll();
+        miTiendaSAP.mostrarTienda();
+
+        miTiendaSAP.venderPersonajeDelEquipo(0);
+        miTiendaSAP.mostrarTienda();
+    }
 }
