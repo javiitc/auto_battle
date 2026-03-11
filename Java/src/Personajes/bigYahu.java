@@ -1,7 +1,7 @@
 package Personajes;
 
 public class bigYahu extends Personaje {
-    public bigYahu(String nombre, int vida, int vidaMax) {
+    public bigYahu() {
         super("Big Yahu", 3, 3);
 
     }

@@ -1,6 +1,6 @@
 package Personajes;
 public class Bob extends Personaje {
-    public Bob(String nombre, int vida, int vidaMax) {
+    public Bob() {
         super("Bob", 17, 17);
     }
 

@@ -1,7 +1,7 @@
 package Personajes;
 
 public class Mambo extends Personaje {
-    public Mambo(String nombre, int vida, int vidaMax) {
+    public Mambo() {
         super("Mambo", 1, 1);
     }
 

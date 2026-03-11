@@ -2,7 +2,7 @@ package Personajes;
 
 public class KokaLoka extends Personaje{
 
-    public KokaLoka(String nombre, int vida, int vidaMax) {
+    public KokaLoka() {
         super("Koka Loka", 15, 15);
    }
 

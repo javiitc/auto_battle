@@ -1,6 +1,6 @@
 package Personajes;
 public class Castor extends Personaje {
-    public Castor(String nombre, int vida, int vidaMax) {
+    public Castor() {
         super("Castor", 5, 5);
     }
 

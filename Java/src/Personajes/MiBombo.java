@@ -1,7 +1,7 @@
 package Personajes;
 
 public class MiBombo extends Personaje {
-    public MiBombo(String nombre, int vida, int vidaMax) {
+    public MiBombo() {
         super("Mi Bombo", 9, 9);
     }
 

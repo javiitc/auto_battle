@@ -1,6 +1,6 @@
 package Personajes;
 public class Patricio extends Personaje {
-    public Patricio(String nombre, int vida, int vidaMax) {
+    public Patricio() {
         super("Patricio", 15, 15);
     }
 

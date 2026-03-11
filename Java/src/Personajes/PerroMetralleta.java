@@ -2,7 +2,7 @@ package Personajes;
 
 public class PerroMetralleta extends Personaje {
 
-    public PerroMetralleta(String nombre, int vida, int vidaMax) {
+    public PerroMetralleta() {
         super("PerroMetralleta", 8, 8);
     }
 

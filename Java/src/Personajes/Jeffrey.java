@@ -2,7 +2,7 @@ package Personajes;
 
 public class Jeffrey extends Personaje {
 
-    public Jeffrey(String nombre, int vida, int vidaMax) {
+    public Jeffrey() {
         super("Jeffrey", 15, 15);
     }
 

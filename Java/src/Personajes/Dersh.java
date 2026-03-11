@@ -1,7 +1,7 @@
 package Personajes;
 
 public class Dersh extends Personaje {
-    public Dersh(String nombre, int vida, int vidaMax) {
+    public Dersh() {
         super("Dersh", 19, 19);
     }
 

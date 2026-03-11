@@ -1,7 +1,7 @@
 package Personajes;
 
 public class furryDeku extends Personaje {
-    public furryDeku(String nombre, int vida, int vidaMax) {
+    public furryDeku() {
         super("Furry Deku", 22, 22);
     }
 

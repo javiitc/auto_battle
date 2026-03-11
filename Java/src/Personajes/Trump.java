@@ -2,7 +2,7 @@ package Personajes;
 
 public class Trump extends Personaje {
 
-    public Trump(String nombre, int vida, int vidaMax) {
+    public Trump() {
         super("Trump",20, 20);
     }
 

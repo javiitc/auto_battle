@@ -1,7 +1,7 @@
 package Personajes;
 
 public class Meowl extends Personaje {
-    public Meowl(String nombre, int vida, int vidaMax) {
+    public Meowl() {
         super("Meowl", 10, 10);
     }
 

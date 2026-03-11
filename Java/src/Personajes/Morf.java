@@ -2,7 +2,7 @@ package Personajes;
 
 public class Morf extends Personaje {
 
-    public Morf(String nombre, int vida, int vidaMax) {
+    public Morf() {
         super("Morf",5, 5);
     }
 

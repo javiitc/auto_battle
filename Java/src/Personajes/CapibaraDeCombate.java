@@ -2,7 +2,7 @@ package Personajes;
 
 public class CapibaraDeCombate extends Personaje{
 
-    public CapibaraDeCombate(String nombre, int vida, int vidaMax) {
+    public CapibaraDeCombate() {
         super("Capibara de Combate", 10, 10);
     }
 

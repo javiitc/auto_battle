@@ -2,7 +2,7 @@ package Personajes;
 
 public class Unemployed extends Personaje{
 
-    public Unemployed(String nombre, int vida, int vidaMax) {
+    public Unemployed() {
         super("Unemployed", 15, 15);
     }
 
