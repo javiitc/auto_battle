@@ -49,7 +49,7 @@ public class EnemigoIA {
             int indice = random.nextInt(copia.size());
             equipoCombate.add(copia.remove(indice)); // Selección manual
         }
-        System.out.println("IA: Alineación lista con " + equipoCombate.size() + " personajes.");
+        System.out.println("El enemigo sale con " + equipoCombate.size() + " personajes.");
     }
 
     public ArrayList<Personaje> getEquipoCombate() {
