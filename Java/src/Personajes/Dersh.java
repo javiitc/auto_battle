@@ -12,8 +12,14 @@ public class Dersh extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Dersh se defiende con su Dershiyate");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Dersh se defiende con su Dershiyate");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 }

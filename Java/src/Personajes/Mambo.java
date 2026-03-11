@@ -12,8 +12,14 @@ public class Mambo extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Mambo se defiende con su Mambo-escudo");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Mambo se defiende con su Mambo-escudo");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 

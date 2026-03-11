@@ -13,7 +13,13 @@ public class bigYahu extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Big Yahu se defiende con su gran tamaño y fuerza, absorbiendo el impacto de los ataques enemigos y reduciendo el daño recibido.");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Big Yahu se defiende con su gran tamaño y fuerza, absorbiendo el impacto de los ataques enemigos y reduciendo el daño recibido.");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }

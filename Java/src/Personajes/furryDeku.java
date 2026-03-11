@@ -12,7 +12,13 @@ public class furryDeku extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Furry Deku se defiende con su poder de transformación en un animal feroz, aumentando su resistencia y reduciendo el daño recibido.");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Furry Deku se defiende con su poder de transformación en un animal feroz, aumentando su resistencia y reduciendo el daño recibido.");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }

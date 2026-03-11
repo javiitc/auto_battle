@@ -12,7 +12,13 @@ public class Papaleta extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Se cubre con los brazos");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Se cubre con los brazos");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }

@@ -11,8 +11,14 @@ public class Piccolo extends Personaje{
         return 5;
     }
     @Override
-    public void defensa(){
-        System.out.println("Farmea aura");
+    public boolean defensa(){
+        if (Math.random() < 0.5) {
+            System.out.println("Farmea aura");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 

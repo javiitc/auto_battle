@@ -34,5 +34,5 @@ public void Personaje(){}
     }
 
     public abstract int ataque ();
-    public abstract void defensa();
+    public abstract boolean defensa();
 }

@@ -12,8 +12,14 @@ public class KokaLoka extends Personaje{
     }
 
     @Override
-    public void defensa() {
-        System.out.println();
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println();
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 
