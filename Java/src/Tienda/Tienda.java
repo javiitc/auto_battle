@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Tienda {
 
-    private static final int numeroSlots = 3;
+    private static final int numeroSlots = 5;
 
     private List<Personaje> slotsPersonajes;
     private Random random;
