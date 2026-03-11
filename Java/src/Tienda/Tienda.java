@@ -104,4 +104,11 @@ public class Tienda {
 
         equipoJugadorDemo.remove(indiceEquipo);
     }
+
+    //Hemos añadido este metodo dentro de tienda para que la IA pueda acceder a la posicion de los personajes.
+    public List<Personaje> getSlotsPersonajes() {
+        return this.slotsPersonajes;
+    }
+
+
 }
