@@ -2,8 +2,7 @@ package Personajes;
 
 public class Dersh extends Personaje {
     public Dersh(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        iniciarPersonaje();
+        super("Dersh", 19, 19);
     }
 
     @Override
@@ -15,10 +14,6 @@ public class Dersh extends Personaje {
     @Override
     public void defensa() {
         System.out.println("Dersh se defiende con su Dershiyate");
-    }
-
-    public void iniciarPersonaje() {
-        Dersh dersh = new Dersh("Dersh", 19, 19);
     }
 
 }

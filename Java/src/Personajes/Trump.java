@@ -1,6 +1,6 @@
 package Personajes;
 
-public abstract class Trump extends Personaje {
+public class Trump extends Personaje {
 
     public Trump(String nombre, int vida, int vidaMax) {
         super("Trump",20, 20);

@@ -1,6 +1,6 @@
 package Personajes;
 
-public abstract class Piccolo extends Personaje{
+public class Piccolo extends Personaje{
 
     public Piccolo(String nombre, int vida, int vidaMax) {
         super("Piccolo", 20, 20);

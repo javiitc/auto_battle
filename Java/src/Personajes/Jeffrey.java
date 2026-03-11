@@ -3,8 +3,7 @@ package Personajes;
 public class Jeffrey extends Personaje {
 
     public Jeffrey(String nombre, int vida, int vidaMax) {
-        super(nombre, vida, vidaMax);
-        iniciarJeffrey();
+        super("Jeffrey", 15, 15);
     }
 
     @Override
@@ -16,9 +15,5 @@ public class Jeffrey extends Personaje {
     @Override
     public void defensa() {
         System.out.println("Jeffrey se defiende con su astucia y rapidez, esquivando los ataques enemigos y contraatacando con movimientos impredecibles.");
-    }
-
-    public void iniciarJeffrey() {
-        Jeffrey jeffrey = new Jeffrey("Jeffrey", 15, 15);
     }
 }
