@@ -9,6 +9,7 @@ public class Jugador {
     private String nombre;
     private ArrayList<Personaje> equipo = new  ArrayList<>();
     private int personajeActual = 0;
+    private int monedas = 5;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
@@ -41,10 +42,22 @@ public class Jugador {
         }
     }
 
+    public void restaurarEquipo() {
+        personajeActual = 0;
+        for (Personaje p : equipo) {
+            p.setVida(p.getVidaMax());
+        }
+    }
+
+    public void añadirMonedas(int cantidad) {
+        monedas += cantidad;
+    }
 
     public String getNombre() { return nombre;}
 
     public ArrayList<Personaje> getEquipo() { return equipo;}
 
     public int getPersonajeActual() { return personajeActual;}
+
+    public int getMonedas() { return monedas; }
 }

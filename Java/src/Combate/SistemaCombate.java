@@ -69,12 +69,12 @@ public class SistemaCombate {
         } else {
             def.setVida(def.getVida() - dmg);
 
-            System.out.println(def.getNombre() + "ha recibido daño!");
+            System.out.println(def.getNombre() + " ha recibido daño!");
             System.out.println("Vida restante: " +  def.getVida());
 
             if (def.getVida() <= 0) {
                 def.setVida(0);
-                System.out.println(def.defensa() + "ha caído en combate!");
+                System.out.println(def.defensa() + " ha caído en combate!");
                 defensor.siguientePersonaje();
 
                 if (defensor.equipoVivo()) {
