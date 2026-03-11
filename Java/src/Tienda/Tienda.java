@@ -93,32 +93,16 @@ public class Tienda {
         System.out.println("¡Has reclutado a " + personajeAComprar.getNombre() + " (Gratis)!");
     }
 
-    public void venderPersonajeDelEquipo(int indiceEquipo) {
+    public void venderPersonaje(int indiceEquipo) {
         if (indiceEquipo < 0 || indiceEquipo >= equipoJugadorDemo.size()) {
             System.out.println("Índice de equipo inválido.");
             return;
         }
 
-        Personaje personajeAVender = equipoJugadorDemo.get(indiceEquipo);
-        System.out.println("\nHas despedido/vendido a " + personajeAVender.getNombre() + ".");
+        Personaje personajeVendido = equipoJugadorDemo.get(indiceEquipo);
+        System.out.println("\nHas despedido/vendido a " + personajeVendido.getNombre() + ".");
 
         equipoJugadorDemo.remove(indiceEquipo);
     }
 
-    public static void main(String[] args) {
-        Tienda miTiendaSAP = new Tienda();
-
-        miTiendaSAP.mostrarTienda();
-
-        miTiendaSAP.comprarPersonaje(0);
-        miTiendaSAP.comprarPersonaje(1);
-
-        miTiendaSAP.mostrarTienda();
-
-        miTiendaSAP.hacerRoll();
-        miTiendaSAP.mostrarTienda();
-
-        miTiendaSAP.venderPersonajeDelEquipo(0);
-        miTiendaSAP.mostrarTienda();
-    }
 }
