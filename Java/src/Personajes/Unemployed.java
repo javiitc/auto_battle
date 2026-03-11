@@ -11,8 +11,14 @@ public class Unemployed extends Personaje{
         return 10;
     }
     @Override
-    public void defensa(){
-        System.out.println("No cotiza el ataque");
+    public boolean defensa(){
+        if (Math.random() < 0.5) {
+            System.out.println("No cotiza el ataque");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 

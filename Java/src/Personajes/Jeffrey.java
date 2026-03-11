@@ -13,7 +13,13 @@ public class Jeffrey extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Jeffrey se defiende con su astucia y rapidez, esquivando los ataques enemigos y contraatacando con movimientos impredecibles.");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Jeffrey se defiende con su astucia y rapidez, esquivando los ataques enemigos y contraatacando con movimientos impredecibles.");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }

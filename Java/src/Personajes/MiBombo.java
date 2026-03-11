@@ -12,8 +12,14 @@ public class MiBombo extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Mi Bombo se defiende con su escudo de bombo");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Mi Bombo se defiende con su escudo de bombo");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 }

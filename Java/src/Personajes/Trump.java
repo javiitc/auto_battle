@@ -13,7 +13,13 @@ public class Trump extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("El ICE defendió a " + getNombre());
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("El ICE defendió a " + getNombre());
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }

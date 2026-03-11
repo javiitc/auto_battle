@@ -13,7 +13,13 @@ public class Osaka extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println(getNombre() + " lanzó un rollito de primavera al rival.");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println(getNombre() + " lanzó un rollito de primavera al rival.");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }

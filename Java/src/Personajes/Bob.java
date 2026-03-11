@@ -11,8 +11,14 @@ public class Bob extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Bob se esta defendiendo");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Bob se esta defendiendo");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 
 }

@@ -12,8 +12,14 @@ public class CarlosKirk extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Esquiva el ataque y la bala");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Esquiva el ataque y la bala");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
 
     }
 }

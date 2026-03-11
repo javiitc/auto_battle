@@ -12,9 +12,14 @@ public class LeonKennedih extends Personaje {
     }
 
     @Override
-    public void defensa() {
-        System.out.println(getNombre() + " gets dihstroyed!");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println(getNombre() + " gets dihstroyed!");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
-
 
 }

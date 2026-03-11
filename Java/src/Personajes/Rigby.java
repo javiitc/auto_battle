@@ -12,7 +12,13 @@ public class Rigby extends Personaje{
     }
 
     @Override
-    public void defensa() {
-        System.out.println("Se hace bolita");
+    public boolean defensa() {
+        if (Math.random() < 0.5) {
+            System.out.println("Se hace bolita");
+            return true;
+        } else {
+            System.out.println();
+            return false;
+        }
     }
 }
