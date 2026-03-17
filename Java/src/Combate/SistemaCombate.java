@@ -67,7 +67,7 @@ public class SistemaCombate {
         if (defiende) {
             System.out.println( def.getNombre() + " " + def.defensa());
         } else {
-            def.setVida(def.getVida() - dmg);
+            def.setVida(Math.max(0, def.getVida() - dmg));
 
             System.out.println(def.getNombre() + " ha recibido daño!");
             System.out.println("Vida restante: " +  def.getVida());
