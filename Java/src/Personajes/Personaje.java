@@ -5,7 +5,6 @@ public abstract class Personaje {
     private int vida;
     private int vidaMax;
 
-public void Personaje(){}
     public Personaje(String nombre, int vida, int vidaMax) {
         this.nombre = nombre;
         this.vida = vida;

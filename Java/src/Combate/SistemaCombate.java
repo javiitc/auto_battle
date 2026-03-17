@@ -15,8 +15,15 @@ public class SistemaCombate {
         System.out.println("==================================");
         System.out.println(j1.getNombre() + " VS  " + j2.getNombre());
 
-        Jugador atacante = random.nextBoolean() ? j1 : j2;
-        Jugador defensor = random.nextBoolean() ? j1 : j2;
+        Jugador atacante;
+        Jugador defensor;
+        if (random.nextBoolean()) {
+            atacante = j1;
+            defensor = j2;
+        } else {
+            atacante = j2;
+            defensor = j1;
+        }
 
         Personaje pAtacante = atacante.obtenerPersonajeActual();
         Personaje pDefensor = defensor.obtenerPersonajeActual();
@@ -65,7 +72,7 @@ public class SistemaCombate {
         int dmg = atq.ataque();
         boolean defiende = def.defensa();
         if (defiende) {
-            System.out.println( def.getNombre() + " " + def.defensa());
+            System.out.println(def.getNombre() + " ha bloqueado el ataque!");
         } else {
             def.setVida(Math.max(0, def.getVida() - dmg));
 
@@ -74,7 +81,7 @@ public class SistemaCombate {
 
             if (def.getVida() <= 0) {
                 def.setVida(0);
-                System.out.println(def.defensa() + " ha caído en combate!");
+                System.out.println(def.getNombre() + " ha caído en combate!");
                 defensor.siguientePersonaje();
 
                 if (defensor.equipoVivo()) {

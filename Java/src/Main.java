@@ -45,7 +45,7 @@ public class Main {
                     boolean enTienda = true;
 
                     while (enTienda) {
-                        tienda.mostrarTienda();
+                        tienda.mostrarTienda(jugador);
 
                         System.out.println("Monedas: " + jugador.getMonedas());
                         System.out.println("1. Comprar");
@@ -60,48 +60,13 @@ public class Main {
                             case 1:
                                 System.out.print("Selecciona slot: ");
                                 int slot = Integer.parseInt(sc.nextLine());
-
-                                if (jugador.getEquipo().size() >= 10) {
-                                    System.out.println("Equipo lleno (máx 10).");
-                                    break;
-                                }
-
-                                if (jugador.getMonedas() <= 0) {
-                                    System.out.println("No tienes monedas.");
-                                    break;
-                                }
-
-                                if (slot >= 0 && slot < tienda.getSlotsPersonajes().size()
-                                        && tienda.getSlotsPersonajes().get(slot) != null) {
-
-                                    Personaje p = tienda.getSlotsPersonajes().get(slot);
-
-                                    jugador.agregarPersonaje(p);
-                                    tienda.comprarPersonaje(slot);
-
-                                    jugador.añadirMonedas(-1); // COSTE DE COMPRA
-
-                                    System.out.println("Has comprado a " + p.getNombre());
-                                }
-                                else {
-                                    System.out.println("Slot inválido.");
-                                }
+                                tienda.comprarPersonaje(slot, jugador);
                                 break;
 
                             case 2:
                                 System.out.print("Selecciona personaje a vender: ");
                                 int idx = Integer.parseInt(sc.nextLine());
-
-                                if (idx >= 0 && idx < jugador.getEquipo().size()) {
-                                    System.out.println("Has vendido a "
-                                            + jugador.getEquipo().get(idx).getNombre());
-
-                                    jugador.getEquipo().remove(idx);
-                                    jugador.añadirMonedas(1); // GANAS 1 MONEDA
-                                }
-                                else {
-                                    System.out.println("Índice inválido.");
-                                }
+                                tienda.venderPersonaje(idx, jugador);
                                 break;
 
                             case 3:

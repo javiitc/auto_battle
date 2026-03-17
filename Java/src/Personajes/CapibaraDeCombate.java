@@ -14,7 +14,7 @@ public class CapibaraDeCombate extends Personaje{
     @Override
     public boolean defensa() {
         if (Math.random() < 0.5) {
-            System.out.println();
+            System.out.println("Ha llamado a Plex para que reciba el ataque en su lugar!");
             return true;
         } else {
             System.out.println();

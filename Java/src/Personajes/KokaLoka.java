@@ -14,7 +14,7 @@ public class KokaLoka extends Personaje{
     @Override
     public boolean defensa() {
         if (Math.random() < 0.5) {
-            System.out.println();
+            System.out.println("Ha usado Escudo Real!");
             return true;
         } else {
             System.out.println();
