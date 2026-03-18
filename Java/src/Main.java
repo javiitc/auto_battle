@@ -20,6 +20,9 @@ public class Main {
         String nombre = sc.nextLine();
 
         Jugador jugador = new Jugador(nombre);
+        //Creación de IA
+        EnemigoIA enemigo = new EnemigoIA();
+        Tienda tiendaIA = new Tienda();
 
         int rondasGanadasJugador = 0;
         int rondasGanadasIA = 0;
@@ -85,9 +88,7 @@ public class Main {
                         System.out.println("Necesitas  1 unidad para combatir.");
                         break;
                     }
-                    // IA
-                    Tienda tiendaIA = new Tienda();
-                    EnemigoIA enemigo = new EnemigoIA();
+                    // IA 
                     enemigo.comprarDeTienda(tiendaIA);
                     enemigo.seleccionarEquipoCombate();
 
@@ -95,6 +96,7 @@ public class Main {
                     Jugador ia = new Jugador(nombresIA[random.nextInt(nombresIA.length)]);
 
                     for (Personaje p : enemigo.getEquipoCombate()) {
+                        p.setVida(p.getVidaMax());
                         ia.agregarPersonaje(p);
                     }
 

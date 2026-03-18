@@ -34,7 +34,7 @@ public class EnemigoIA {
     public void seleccionarEquipoCombate() {
         equipoCombate.clear();
 
-        // Ahora el equipo de combate es TODO lo que hay en el inventario
+        // Ahora el equipo de combate es todo lo que está dentro de mi array
         for (Personaje p : inventario) {
             equipoCombate.add(p);
         }
