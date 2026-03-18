@@ -42,3 +42,7 @@ El juego se estructura en rondas. Tras cada combate, ambos jugadores reciben una
 El primer jugador en alcanzar diez victorias es declarado ganador de la partida, momento en el cual el juego finaliza.
 
 ---
+
+## Autores
+
+Lexter Abe, Berta Arenas, Juan Manuel Galan, Hugo González, Denise Name, Lem Quilca, Javier Tituaña
